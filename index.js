@@ -3,7 +3,7 @@ const gifts =[ "teddy bear","drone" ,"doll"]
 const newArray =[]
 
 function writeCards (stringArray,eventName){
-    for (let i= 0; < stringArray.length;i ++ ) {
+    for ( let i = 0; i< stringArray.length ; i++){
 newArray.push ('Thank you,${string Array [i]}, for the wonderful ${eventName} gift!') ; 
     }
     return Array
