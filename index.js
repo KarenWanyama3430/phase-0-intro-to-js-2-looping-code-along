@@ -1,29 +1,23 @@
-const gifts =[ "teddy bear","drone" ,"doll"]
-
-const newArray =[]
-
-function writeCards (stringArray,eventName){
-    for ( let i = 0; i< stringArray.length ; i++){
-newArray.push ('Thank you,${string Array [i]}, for the wonderful ${eventName} gift!') ; 
+function writeCards( namesArray, event ) {
+    let thankYouCards = []
+    for ( let i = 0; i < namesArray.length; i++ ) {
+      thankYouCards.push( `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!` )
     }
-    return Array
-}
-
-function wrapGifts (gifts) {
-    let i = 0;
-    while (i < gifts.length){
-        console.log ('wrapped ${gifts[i]} and added a bow!');
-        i++ ;
-    }
-    return gifts
-}
-
-function countDown (count) {
-    let i = count;
-    while (i>= 0){
-        comsole.log (i);
-        i--;
+    return thankYouCards
+  }
+  
+  function countDown( countdown ) {
+    while ( countdown > 0 ) {
+      console.log( countdown );
+      countdown -= 1;
+  function countDown( startingNumber ) {
+    while ( startingNumber > 0 ) {
+      console.log( startingNumber );
+      startingNumber -= 1;
     }
 }
-
-countDown(10);
+    }
+    console.log( countdown );
+    console.log( startingNumber );
+  }
+  
